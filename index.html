@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="pagina02.html" method="get"> <!--get para verlo en browser-->
+        <table border="1">
+            <tr>
+                <td>solo lectura</td>
+                <td><input type="text" name="det" value="ejemplo de solo lectura" readonly size="1"></td> <!--size largo o ancho de fila o columna formulario-->
+            </tr>
+            
+            <tr>
+                <td>ingrese nombre</td>
+                <td><input type="text" name="nom" required autofocus></td>
+            </tr>
+            <tr>
+                <td>ingrese rut</td>
+                <td><input type="text" name="rut"></td> <!--max lenght: maximo de caracteres que se pueden poner-->
+            </tr>
+            <tr>
+                <td>otro</td>
+                <td><input type="text"></td>
+            </tr>
+            
+            <tr>
+                <td>estado civil</td>
+                <td>
+                    soltero <input type="radio" name="estado" value="soltero" >
+                    casado <input type="radio" name="estado" value="casado" >
+                    separado <input type="radio" name="estado" value="separado" >
+                    viudo <input type="radio" name="estado" value="viudo" >
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>vivienda</td>
+                <td>
+                    soltero <input type="checkbox" name="casa">    
+                </td>
+            </tr>
+            <tr>
+                <td>fecha</td>
+                <td>
+                    <input type="date" name="fecha ">    
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>
+                    <input type="password" name="pass">    
+                </td>
+            </tr>
+            <tr>
+                <td><select name="city">
+                    <option value="23">paris</option>
+                    <option value="22">roma</option>
+                    <option value="21">santiago</option>
+                    <option value="24">calcuta</option>
+                </select></td>
+                <td>
+                    <input type="password" name="pass ">
+                </td>
+            </tr>
+
+            <tr>
+                <td>color</td>
+                <td>
+                    <input type="color" name="col" >    
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" name="mail ">    
+                </td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td><input type="text" name="det2" value="ejemplo deshabilitado" disabled></td>
+            </tr>
+            <tr>
+                <td>oculto</td>
+                <td><input type="text" name="det3" value="ejemplo oculto" hidden></td>
+            </tr>
+            <tr>
+                <td>min max number</td>
+                <td>
+                    <input type="number" min="10" max="" name="num">    
+                </td>
+            </tr>
+            <tr>
+                <td>obs.</td>
+                <td><textarea name="obj" cols="30" rows="10">bla bla bla</textarea></td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" name="boton" value="entrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+<!--colspan: agarra espacio
+-->
